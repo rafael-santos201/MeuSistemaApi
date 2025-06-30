@@ -56,5 +56,11 @@ namespace MeuSistemaApi.Controllers
 
             return Ok(new { token = tokenString });
         }
+
+        [HttpGet("ping")]
+        public IActionResult Ping()
+        {
+            return Ok(new { status = "API  online!" });
+        }
     }
     }
